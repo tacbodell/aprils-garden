@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://kit.fontawesome.com/b8de352311.js" crossorigin="anonymous"></script>
+		
+		<title>April's Garden</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/gallery.css">
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul class="nav-flex">
+					<li class="nav-logo"><a href=""><img src="images/logos-darkbg/cover-cropped.png" alt=""></a></li>
+					<!--Desktop Nav Items-->
+					<li class="nav-dt"><a href="index.html">HOME</a></li>
+					<li class="nav-dt"><a href="gallery.html">GALLERY</a></li>
+					<li class="nav-dt"><a href="artist.html">THE ARTIST</a></li>
+					<li class="nav-dt"><a href="#contact" >CONTACT</a></li>
+					<!--Mobile Modal Button-->
+					<li class="nav-mobile" id="navButton"><a href="javascript:void(0);"><i class="fa-solid fa-bars"></i></a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Modal -->
+		<section class="modal" id="modal">
+			<div class="modal-content">
+				<li class="modal-link"><a href="index.html">HOME</a></li>
+				<li class="modal-link"><a href="gallery.html">GALLERY</a></li>
+				<li class="modal-link"><a href="artist.html">THE ARTIST</a></li>
+				<li class="modal-link"><a href="#contact">CONTACT</a></li>
+				<div class="divider"></div>
+				<li class="close-button" id="close-button"><a href="">&times;</a></li>
+			</div>
+		</section>
+
+        <div class="navfiller"></div>
+
+		<section class="crafts" id="crafts">
+			<div class="container">
+				<h2>CRAFT GALLERY</h2>
+				<div class="divider"></div>
+				<div class="flex--crafts long">
+					<div class="item">
+						<img src="images/april-images/Carnations and Plumeria.jpg" alt="">
+						<h3>CARNATIONS AND PLUMERIA</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repudiandae beatae corporis dolorum provident ab quas voluptatibus nostrum, ipsa obcaecati deleniti ullam tempora. Impedit, explicabo.</p>
+					</div>
+					<div class="item">
+						<img src="images/april-images/carnations.jpg" alt="">
+						<h3>CARNATIONS BOUQUET</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repudiandae beatae corporis dolorum provident ab quas voluptatibus nostrum, ipsa obcaecati deleniti ullam tempora. Impedit, explicabo.</p>
+					</div>
+				</div>
+				<div class="flex--crafts">
+					<div class="item">
+						<div class="im">
+							<img src="images/april-images/blackcroppedthin.jpg" alt="">
+							<img src="images/april-images/blackcroppedthin2.jpg" alt="">
+						</div>
+						<h3>DARK BLACK ROSE</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repudiandae beatae corporis dolorum provident ab quas voluptatibus nostrum, ipsa obcaecati deleniti ullam tempora. Impedit, explicabo.</p>
+					</div>
+					<div class="item">
+						<img src="images/april-images/Bobby pins.jpg" alt="">
+						<h3>FLOWERED BOBBY PINS</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repudiandae beatae corporis dolorum provident ab quas voluptatibus nostrum, ipsa obcaecati deleniti ullam tempora. Impedit, explicabo.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="contact" id="contact">
+			<div class="container container--contact">
+				<div class="contact--left">
+					<h2>Want to place an order or get in touch?</h2>
+					<p>I'm currently taking on new projects! Please get in contact with me through the below e-mail form and I'll get back to you as soon as I can. In the meantime, take a look at my socials and see if there's anything you like!</p>
+					<div class="social">
+						<a href="https://www.facebook.com/aprilsgardenbeadedflowers/" target="_blank"><i class="fa-brands fa-facebook-square hvr-grow"></i></a>
+						<a href="https://www.etsy.com/shop/aprilsgarden/?etsrc=sdt&fbclid=IwAR2_eqwA7CZrUcs5CiR2rU9JjBllHY_ea1abOlH_LwNwgoFZ6yHPT3WirJk"><i class="fa-brands fa-etsy hvr-grow" target="_blank"></i></a>
+						<a href="https://www.instagram.com/rodentdrem/?fbclid=IwAR22LYU25GBz28MD0mQTmD1ogsvA6HUMrNxnFVfoxSP4Sjbh94tTr7qIOac"><i class="fa-brands fa-instagram hvr-grow" target="_blank"></i></a>
+					</div>
+				</div>
+				<div class="contact--right">
+					<form name="contact">
+						<div>
+							<input type="text" placeholder="Your name...">
+							<input type="email" placeholder="Your email...">
+							<textarea name="message" id="message" placeholder="Your message..."></textarea>
+						</div>
+						<div>
+							<a class="btn hvr-fade">SUBMIT MESSAGE</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</footer>
+		
+		<script type="text/javascript" src="js/navbar.js"></script>
+	</body>
+</html>

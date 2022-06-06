@@ -4,7 +4,10 @@
     	<meta charset="utf-8">
     	<meta name="description" content="Your description goes here">
     	<meta name="keywords" content="one, two, three">
-		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://kit.fontawesome.com/b8de352311.js" crossorigin="anonymous"></script>
 		
@@ -12,7 +15,7 @@
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/index.css">
 	</head>
 	<body>
 		<header>
@@ -20,9 +23,9 @@
 				<ul class="nav-flex">
 					<li class="nav-logo"><a href=""><img src="images/logos-darkbg/cover-cropped.png" alt=""></a></li>
 					<!--Desktop Nav Items-->
-					<li class="nav-dt"><a href="">HOME</a></li>
-					<li class="nav-dt"><a href="">GALLERY</a></li>
-					<li class="nav-dt"><a href="">THE ARTIST</a></li>
+					<li class="nav-dt"><a href="index.html">HOME</a></li>
+					<li class="nav-dt"><a href="gallery.html">GALLERY</a></li>
+					<li class="nav-dt"><a href="artist.html">THE ARTIST</a></li>
 					<li class="nav-dt"><a href="#contact" >CONTACT</a></li>
 					<!--Mobile Modal Button-->
 					<li class="nav-mobile" id="navButton"><a href="javascript:void(0);"><i class="fa-solid fa-bars"></i></a></li>
@@ -33,9 +36,9 @@
 		<!-- Modal -->
 		<section class="modal" id="modal">
 			<div class="modal-content">
-				<li class="modal-link"><a href="">HOME</a></li>
-				<li class="modal-link"><a href="">GALLERY</a></li>
-				<li class="modal-link"><a href="">THE ARTIST</a></li>
+				<li class="modal-link"><a href="index.html">HOME</a></li>
+				<li class="modal-link"><a href="gallery.html">GALLERY</a></li>
+				<li class="modal-link"><a href="artist.html">THE ARTIST</a></li>
 				<li class="modal-link"><a href="#contact">CONTACT</a></li>
 				<div class="divider"></div>
 				<li class="close-button" id="close-button"><a href="">&times;</a></li>
@@ -52,7 +55,7 @@
 		<section class="links" id="links">
 			<div class="container">
 				<h2>April's Garden is where memories are made permanent.</h2>
-				<p>Operated out of a small home in Chesapeake VA, every craft is hand-made to perfectly fit the occasion.</p>
+				<p class="headp">Operated out of a small home in Chesapeake VA, every craft is hand-made to perfectly fit the occasion.</p>
 
 				<div class="divider"></div>
 
@@ -62,28 +65,28 @@
 					</div>
 					<div class="words">
 						<h3>ROSES, DAISIES, DAFFODILS, & MORE</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam tempora, impedit vero exercitationem provident aliquam sit non tenetur odio rerum, pariatur quasi molestiae! Quam, iusto!</p>
-						<a href="#" class="btn">GALLERY</a>
+						<p>With experience using a variety of different shapes, sizes, patterns, and materials, every flower is made with love and attention to detail.</p>
+						<a href="gallery.html" class="btn hvr-fade">GALLERY</a>
 					</div>
 				</section>
-				<section class="row">
-					<div>
-						<img src="images/april-images/blackcropped.jpg" alt="">
+				<section class="row row--alt">
+					<div class="image">
+						<img src="images/april-images/Wreath Small Sunflower and Daisies.jpg" alt="">
 					</div>
 					<div class="words">
-						<h3>HAND-MADE JEWELERY</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam tempora, impedit vero exercitationem provident aliquam sit non tenetur odio rerum, pariatur quasi molestiae! Quam, iusto!</p>
-						<a href="#" class="btn">PAST WORKS</a>
+						<h3>CUSTOM CRAFTS</h3>
+						<p>Want something a little more personal? Chances are, we'll be able to make it work. Shoot me a message about your product and let's see what we can get done!</p>
+						<a href="#contact" class="btn hvr-fade">PLACE AN ORDER</a>
 					</div>
 				</section>
 				<section class="row">
-					<div>
-						<img src="images/april-images/blackcropped.jpg" alt="">
+					<div class="image">
+						<img src="images/aprilpic.jpg" alt="">
 					</div>
 					<div class="words">
 						<h3>MEET OUR ARTIST</h3>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam tempora, impedit vero exercitationem provident aliquam sit non tenetur odio rerum, pariatur quasi molestiae! Quam, iusto!</p>
-						<a href="#" class="btn">MY STORY</a>
+						<p>My name is April! Flowers have always been tied closely with who I am, and I use them as a way to express myself and help others. Read more about myself here!</p>
+						<a href="artist.html" class="btn hvr-fade">MY STORY</a>
 					</div>
 				</section>
 			</div>
@@ -91,23 +94,31 @@
 		</section>
 
 		<footer class="contact" id="contact">
-			<div class="container">
-				<h2>Want to place an order or get in touch?</h2>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet tenetur in odit distinctio possimus expedita doloremque mollitia suscipit tempora ut. Laudantium porro provident itaque fugit!</p>
-				
-				<form name="contact">
-					<div>
-						<input type="text" placeholder="Your name...">
-						<input type="email" placeholder="Your email...">
-						<textarea name="message" id="message" placeholder="Your message..."></textarea>
+			<div class="container container--contact">
+				<div class="contact--left">
+					<h2>Want to place an order or get in touch?</h2>
+					<p>I'm currently taking on new projects! Please get in contact with me through the below e-mail form and I'll get back to you as soon as I can. In the meantime, take a look at my socials and see if there's anything you like!</p>
+					<div class="social">
+						<a href="https://www.facebook.com/aprilsgardenbeadedflowers/" target="_blank"><i class="fa-brands fa-facebook-square hvr-grow"></i></a>
+						<a href="https://www.etsy.com/shop/aprilsgarden/?etsrc=sdt&fbclid=IwAR2_eqwA7CZrUcs5CiR2rU9JjBllHY_ea1abOlH_LwNwgoFZ6yHPT3WirJk"><i class="fa-brands fa-etsy hvr-grow" target="_blank"></i></a>
+						<a href="https://www.instagram.com/rodentdrem/?fbclid=IwAR22LYU25GBz28MD0mQTmD1ogsvA6HUMrNxnFVfoxSP4Sjbh94tTr7qIOac"><i class="fa-brands fa-instagram hvr-grow" target="_blank"></i></a>
 					</div>
-					<div>
-						<a class="btn">SUBMIT MESSAGE</a>
-					</div>
-				</form>
+				</div>
+				<div class="contact--right">
+					<form name="contact">
+						<div>
+							<input type="text" placeholder="Your name...">
+							<input type="email" placeholder="Your email...">
+							<textarea name="message" id="message" placeholder="Your message..."></textarea>
+						</div>
+						<div>
+							<a class="btn hvr-fade">SUBMIT MESSAGE</a>
+						</div>
+					</form>
+				</div>
 			</div>
 		</footer>
 		
-		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/navbar.js"></script>
 	</body>
 </html>

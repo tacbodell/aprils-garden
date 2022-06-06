@@ -38,6 +38,12 @@ html {
      width: min(50rem, 90%);
      margin-inline: auto;
 }
+.divider {
+     border: solid black 1px;
+     width: 70%;
+     margin-inline: auto;
+     margin-bottom: 1rem;
+}
 
 img {
      width: 100%;
@@ -48,6 +54,8 @@ p{
 }
 .btn {
      font-size: 1.5rem;
+     font-weight: 400;
+     cursor: pointer;
 }
 
 nav {
@@ -65,6 +73,7 @@ nav {
           padding-inline: 2rem;
      }
           .nav-logo {
+               margin-right: auto;
                padding-inline: .5rem;
           }
           nav img {
@@ -75,10 +84,10 @@ nav {
      }
      .nav-flex {
           display: flex;
-          justify-content: space-between;
+          justify-content: right;
      }
      .nav-dt {
-          font-size: 1rem;
+          font-size: 1.5rem;
           display: none;
      }
      .nav-mobile {
@@ -139,74 +148,47 @@ nav {
                transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
           }
 
-main {
-     height: 100vh;
-     background-image: url('../images/hero-bg-darkened-downscaled.jpg');
-     background-position: center;
-     background-size: cover;
+.navfiller {
+     height: 5rem;
 }
-     main h1 {
-          color: white;
-          font-weight: bold;
-          font-size: 4rem;
-          text-align: center;
-     }
-     main .btn {
-          border: solid black 3px;
-          background: var(--dark-red);
-          font-size: 2rem;
-          padding: 1.5rem;
-          text-align: center;
-     }
-     main .container {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          width: 50%;
-          transform: translate(-50%, -50%);
-          margin-inline: auto;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-flow: column nowrap;
-          gap: 4rem;
-     }
 
-.links {
+.crafts {
      background: var(--yellow);
      text-align: center;
-     padding-block: 2rem;
-     font-weight: 300;
+     padding: 2rem 0;
 }
-     .links h2 {
+     .crafts h2 {
+          font-size: 2.5rem;
           font-weight: 600;
-          font-size: 2rem;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
      }
-     .links h3 {
-          font-size: 1.5rem;
-          margin-bottom: .5rem;
+     .crafts h3 {
+          font-size: 1.8rem;
+          margin-block: 1.5rem;
      }
-     .links p {
-          margin-bottom: 1rem;
+     .crafts .container {
+          width: 85%;
      }
-     .links img {
-          width: 70%;
+     .crafts .item {
           margin: 1rem auto 1rem auto;
-     }
-     .links .words {
+          padding: 2rem;
           background: black;
           color: white;
-          border-radius: 1.5rem;
-          padding: 1.5rem;
+          border-radius: 1rem;
+          width: min(30rem, 100%);
      }
-     .links .btn {
-          background: var(--dark-green);
-          display: inline-block;
-          color: black;
-          padding: 1rem 2rem;
-          border-radius: 2rem;
+     .crafts .im {
+          display: flex;
+          flex-wrap: nowrap;
      }
+     .crafts .item img {
+          height: 15rem;
+          object-fit: contain;
+          margin-inline: auto;
+     }
+     
+
+
 
 footer {
      padding-block: 2rem;
@@ -238,24 +220,22 @@ footer {
           padding: 1rem 2rem;
           border-radius: 2rem;
      }
-
-
-
-
-
-   
+     footer .social {
+          display: flex;
+          gap: 3rem;
+          justify-content: center;
+          color: lightgray;
+          padding-bottom: 1rem;
+     }
+     footer i {
+          font-size: 3rem;
+     }
 
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
 @media all and (min-width: 950px) {
      .nav-dt {
           display: flex;
@@ -266,7 +246,35 @@ footer {
      html {
           font-size: 100%;
      }
+
+     .flex--crafts {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          gap: 1rem;
+     }
+
+          .flex--crafts .item {
+               margin-inline: 0;
+          }
+
+     .container--contact {
+          display: flex;
+          align-items: center;
+          width: min(90%, 65rem);
+     }
+     .contact--left {
+          width: 60%;
+     }
+     .contact--right {
+          width: 40%;
+     }
 }
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
 
 .hvr-fade {
      display: inline-block;
@@ -283,4 +291,21 @@ footer {
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
      background-color: #2098D1;
      color: white;
-   }
+}
+
+.hvr-grow {
+     display: inline-block;
+     vertical-align: middle;
+     -webkit-transform: perspective(1px) translateZ(0);
+     transform: perspective(1px) translateZ(0);
+     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+     -webkit-transition-duration: 0.3s;
+     transition-duration: 0.3s;
+     -webkit-transition-property: transform, color;
+     transition-property: transform, color;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+     -webkit-transform: scale(1.3);
+     transform: scale(1.3);
+     color: orange;
+}
