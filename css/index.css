@@ -205,6 +205,8 @@ main {
      }
      .links img {
           margin: 1rem auto 1rem auto;
+          border: solid black .5rem;
+          border-radius: 1rem;
      }
      .links .words {
           background: black;

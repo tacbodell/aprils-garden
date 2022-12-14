@@ -257,6 +257,8 @@ footer {
     .images {
         width: 45%;
         float: left;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     .words {
         width: 45%;
@@ -330,6 +332,20 @@ footer {
         display: block;
     }
 }
+
+@media all and (min-width: 1050px) {
+     .artist p {
+          font-size: .8rem;
+     }
+}
+
+@media all and (min-width: 1660px) {
+     .artist p {
+          font-size: 1.7rem;
+          line-height: 2rem;
+     }
+ }
+ 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
