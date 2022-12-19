@@ -109,14 +109,14 @@
 					</div>
 				</div>
 				<div class="contact--right">
-					<form name="contact">
+					<form name="contact" method="POST" data-netlify="true" netlify>
 						<div>
-							<input type="text" placeholder="Your name...">
-							<input type="email" placeholder="Your email...">
-							<textarea name="message" id="message" placeholder="Your message..."></textarea>
-						</div>
-						<div>
-							<a class="btn hvr-fade">SUBMIT MESSAGE</a>
+							<input type="text" placeholder="Your name..." name="name">
+							<input type="email" placeholder="Your email..." name="email">
+							<textarea name="message" id="message" placeholder="Your message..." name="message"></textarea>
+							<div>
+								<button class="btn hvr-fade" type="submit">SUBMIT MESSAGE</button>
+							</div>
 						</div>
 					</form>
 				</div>
